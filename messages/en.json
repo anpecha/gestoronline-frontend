@@ -1,0 +1,84 @@
+{
+  "nav": {
+    "dashboard": "Dashboard",
+    "adsAccounts": "Ad Accounts",
+    "alerts": "Alerts",
+    "settings": "Settings"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "totalSpend": "Total Spend",
+    "impressions": "Impressions",
+    "clicks": "Clicks",
+    "conversions": "Conversions",
+    "accounts": "Connected Accounts",
+    "activeCampaigns": "Active Campaigns",
+    "ctr": "CTR",
+    "cpc": "CPC",
+    "noData": "No data available",
+    "accountsSection": "Ad Accounts",
+    "connectFirst": "No accounts connected. Connect your ad accounts to get started.",
+    "accountsCount": "{count} account(s) connected with {campaigns} active campaign(s).",
+    "viewAccounts": "View accounts and campaigns →",
+    "connectMeta": "+ Connect Meta Ads",
+    "connectGoogle": "+ Connect Google Ads",
+    "period": "Period",
+    "platform": "Platform",
+    "all": "All",
+    "days7": "7 days",
+    "days30": "30 days",
+    "spendEvolution": "Spend Evolution"
+  },
+  "ads": {
+    "accountsTitle": "Ad Accounts",
+    "noAccounts": "No connected accounts.",
+    "connectMeta": "Connect Meta Ads",
+    "connectGoogle": "Connect Google Ads",
+    "campaigns": "Campaigns",
+    "sync": "Sync",
+    "syncing": "Syncing...",
+    "back": "← Ad Accounts",
+    "noCampaigns": "No campaigns found.",
+    "status": "Status",
+    "budget": "Budget",
+    "objective": "Objective",
+    "actions": "Actions",
+    "pause": "Pause",
+    "activate": "Activate",
+    "viewCampaigns": "View Campaigns →"
+  },
+  "alerts": {
+    "title": "Alerts",
+    "noAlerts": "No alerts.",
+    "markAllRead": "Mark all as read",
+    "markRead": "Mark as read",
+    "view": "View →",
+    "severities": {
+      "CRITICAL": "Critical",
+      "HIGH": "High",
+      "MEDIUM": "Medium",
+      "LOW": "Low"
+    }
+  },
+  "auth": {
+    "login": "Sign In",
+    "register": "Create Account",
+    "email": "Email",
+    "password": "Password",
+    "name": "Name",
+    "forgotPassword": "Forgot password",
+    "noAccount": "Don't have an account?",
+    "hasAccount": "Already have an account?",
+    "signUp": "Sign up",
+    "signIn": "Sign in"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "save": "Save",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "search": "Search"
+  }
+}

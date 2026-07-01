@@ -1,0 +1,84 @@
+{
+  "nav": {
+    "dashboard": "Panel",
+    "adsAccounts": "Cuentas de Anuncios",
+    "alerts": "Alertas",
+    "settings": "Configuración"
+  },
+  "dashboard": {
+    "title": "Panel",
+    "totalSpend": "Gasto Total",
+    "impressions": "Impresiones",
+    "clicks": "Clics",
+    "conversions": "Conversiones",
+    "accounts": "Cuentas Conectadas",
+    "activeCampaigns": "Campañas Activas",
+    "ctr": "CTR",
+    "cpc": "CPC",
+    "noData": "Sin datos disponibles",
+    "accountsSection": "Cuentas de Anuncios",
+    "connectFirst": "Ninguna cuenta conectada. Conecta tus cuentas de anuncios para comenzar.",
+    "accountsCount": "{count} cuenta(s) conectada(s) con {campaigns} campaña(s) activa(s).",
+    "viewAccounts": "Ver cuentas y campañas →",
+    "connectMeta": "+ Conectar Meta Ads",
+    "connectGoogle": "+ Conectar Google Ads",
+    "period": "Período",
+    "platform": "Plataforma",
+    "all": "Todas",
+    "days7": "7 días",
+    "days30": "30 días",
+    "spendEvolution": "Evolución de Gasto"
+  },
+  "ads": {
+    "accountsTitle": "Cuentas de Anuncios",
+    "noAccounts": "Ninguna cuenta conectada.",
+    "connectMeta": "Conectar Meta Ads",
+    "connectGoogle": "Conectar Google Ads",
+    "campaigns": "Campañas",
+    "sync": "Sincronizar",
+    "syncing": "Sincronizando...",
+    "back": "← Cuentas de Anuncios",
+    "noCampaigns": "Ninguna campaña encontrada.",
+    "status": "Estado",
+    "budget": "Presupuesto",
+    "objective": "Objetivo",
+    "actions": "Acciones",
+    "pause": "Pausar",
+    "activate": "Activar",
+    "viewCampaigns": "Ver Campañas →"
+  },
+  "alerts": {
+    "title": "Alertas",
+    "noAlerts": "Sin alertas.",
+    "markAllRead": "Marcar todas como leídas",
+    "markRead": "Marcar como leída",
+    "view": "Ver →",
+    "severities": {
+      "CRITICAL": "Crítico",
+      "HIGH": "Alto",
+      "MEDIUM": "Medio",
+      "LOW": "Bajo"
+    }
+  },
+  "auth": {
+    "login": "Iniciar Sesión",
+    "register": "Crear Cuenta",
+    "email": "Correo electrónico",
+    "password": "Contraseña",
+    "name": "Nombre",
+    "forgotPassword": "Olvidé mi contraseña",
+    "noAccount": "¿No tienes una cuenta?",
+    "hasAccount": "¿Ya tienes una cuenta?",
+    "signUp": "Regístrate",
+    "signIn": "Inicia sesión"
+  },
+  "common": {
+    "loading": "Cargando...",
+    "error": "Error",
+    "success": "Éxito",
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "confirm": "Confirmar",
+    "search": "Buscar"
+  }
+}

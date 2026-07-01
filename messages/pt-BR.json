@@ -1,0 +1,84 @@
+{
+  "nav": {
+    "dashboard": "Dashboard",
+    "adsAccounts": "Contas de Anúncios",
+    "alerts": "Alertas",
+    "settings": "Configurações"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "totalSpend": "Gasto Total",
+    "impressions": "Impressões",
+    "clicks": "Cliques",
+    "conversions": "Conversões",
+    "accounts": "Contas Conectadas",
+    "activeCampaigns": "Campanhas Ativas",
+    "ctr": "CTR",
+    "cpc": "CPC",
+    "noData": "Nenhum dado disponível",
+    "accountsSection": "Contas de Anúncios",
+    "connectFirst": "Nenhuma conta conectada. Conecte suas contas de anúncio para começar.",
+    "accountsCount": "{count} conta(s) conectada(s) com {campaigns} campanha(s) ativa(s).",
+    "viewAccounts": "Ver contas e campanhas →",
+    "connectMeta": "+ Conectar Meta Ads",
+    "connectGoogle": "+ Conectar Google Ads",
+    "period": "Período",
+    "platform": "Plataforma",
+    "all": "Todas",
+    "days7": "7 dias",
+    "days30": "30 dias",
+    "spendEvolution": "Evolução de Gasto"
+  },
+  "ads": {
+    "accountsTitle": "Contas de Anúncios",
+    "noAccounts": "Nenhuma conta conectada.",
+    "connectMeta": "Conectar Meta Ads",
+    "connectGoogle": "Conectar Google Ads",
+    "campaigns": "Campanhas",
+    "sync": "Sincronizar",
+    "syncing": "Sincronizando...",
+    "back": "← Contas de Anúncios",
+    "noCampaigns": "Nenhuma campanha encontrada.",
+    "status": "Status",
+    "budget": "Orçamento",
+    "objective": "Objetivo",
+    "actions": "Ações",
+    "pause": "Pausar",
+    "activate": "Ativar",
+    "viewCampaigns": "Ver Campanhas →"
+  },
+  "alerts": {
+    "title": "Alertas",
+    "noAlerts": "Nenhum alerta.",
+    "markAllRead": "Marcar todas como lidas",
+    "markRead": "Marcar como lida",
+    "view": "Ver →",
+    "severities": {
+      "CRITICAL": "Crítico",
+      "HIGH": "Alto",
+      "MEDIUM": "Médio",
+      "LOW": "Baixo"
+    }
+  },
+  "auth": {
+    "login": "Entrar",
+    "register": "Criar Conta",
+    "email": "E-mail",
+    "password": "Senha",
+    "name": "Nome",
+    "forgotPassword": "Esqueci a senha",
+    "noAccount": "Não tem uma conta?",
+    "hasAccount": "Já tem uma conta?",
+    "signUp": "Cadastre-se",
+    "signIn": "Faça login"
+  },
+  "common": {
+    "loading": "Carregando...",
+    "error": "Erro",
+    "success": "Sucesso",
+    "save": "Salvar",
+    "cancel": "Cancelar",
+    "confirm": "Confirmar",
+    "search": "Buscar"
+  }
+}
