@@ -1,12 +1,24 @@
-import { NextResponse } from "next/server";
-import type { NextRequest } from "next/server";
+import createMiddleware from "next-intl/middleware";
+import { NextRequest, NextResponse } from "next/server";
+import { routing } from "./i18n/routing";
+
+const intlMiddleware = createMiddleware(routing);
 
 export function middleware(request: NextRequest) {
-  if (request.nextUrl.pathname === "/") {
-    return NextResponse.redirect(new URL("/auth/login", request.url));
+  const { pathname } = request.nextUrl;
+
+  if (pathname === "/") {
+    return NextResponse.next();
   }
+
+  const localePattern = /^\/(pt-BR|en|es)\//;
+  if (!localePattern.test(pathname)) {
+    return intlMiddleware(request);
+  }
+
+  return NextResponse.next();
 }
 
 export const config = {
-  matcher: "/",
+  matcher: ["/((?!api|_next|_vercel|.*\\..*).*)"],
 };

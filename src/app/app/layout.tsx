@@ -3,11 +3,13 @@
 import { useAuth } from "@/lib/auth-context";
 import { useRouter, usePathname } from "next/navigation";
 import { useEffect } from "react";
+import { useTheme } from "@/components/theme-provider";
 
 const navItems = [
   { href: "/app/dashboard", label: "Dashboard", icon: "📊" },
   { href: "/app/ads/accounts", label: "Contas de Anúncios", icon: "📢" },
   { href: "/app/alerts", label: "Alertas", icon: "🔔" },
+  { href: "/app/settings", label: "Configurações", icon: "⚙️" },
 ];
 
 function NavLink({ href, children }: { href: string; children: React.ReactNode }) {
@@ -25,8 +27,21 @@ function NavLink({ href, children }: { href: string; children: React.ReactNode }
   );
 }
 
+function ThemeToggle() {
+  const { theme, setTheme } = useTheme();
+  return (
+    <button
+      onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+      className="text-gray-400 hover:text-white transition-colors text-lg"
+      title="Alternar tema"
+    >
+      {theme === "dark" ? "☀️" : "🌙"}
+    </button>
+  );
+}
+
 export default function AppLayout({ children }: { children: React.ReactNode }) {
-  const { user, loading } = useAuth();
+  const { user, loading, logout } = useAuth();
   const router = useRouter();
   const pathname = usePathname();
 
@@ -38,8 +53,8 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
 
   if (loading) {
     return (
-      <div className="flex min-h-screen items-center justify-center bg-gray-50">
-        <p className="text-gray-500">Carregando...</p>
+      <div className="flex min-h-screen items-center justify-center bg-background">
+        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-brand-red" />
       </div>
     );
   }
@@ -49,7 +64,7 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
   const pageTitle = navItems.find((n) => pathname.startsWith(n.href))?.label || "Dashboard";
 
   return (
-    <div className="flex min-h-screen bg-[#F5F5F5]">
+    <div className="flex min-h-screen bg-background dark:bg-[#0f0f0f]">
       <aside className="w-64 bg-brand-dark flex flex-col shrink-0">
         <div className="p-6 border-b border-white/10">
           <h1 className="text-xl font-bold text-white">GestorOnline</h1>
@@ -65,15 +80,14 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
           ))}
         </nav>
 
-        <div className="p-4 border-t border-white/10">
-          <p className="text-xs text-gray-500 truncate">{user.email}</p>
+        <div className="p-4 border-t border-white/10 space-y-2">
+          <div className="flex items-center justify-between">
+            <p className="text-xs text-gray-500 truncate">{user.email}</p>
+            <ThemeToggle />
+          </div>
           <button
-            onClick={() => {
-              localStorage.removeItem("accessToken");
-              localStorage.removeItem("refreshToken");
-              window.location.href = "/auth/login";
-            }}
-            className="sidebar-link sidebar-link-inactive w-full mt-2 text-xs"
+            onClick={logout}
+            className="sidebar-link sidebar-link-inactive w-full text-xs"
           >
             Sair
           </button>
@@ -81,10 +95,10 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
       </aside>
 
       <div className="flex-1 flex flex-col min-w-0">
-        <header className="h-16 bg-white border-b border-gray-200 flex items-center justify-between px-8 shrink-0">
-          <h2 className="text-lg font-semibold text-gray-900">{pageTitle}</h2>
+        <header className="h-16 border-b border-border bg-card flex items-center justify-between px-8 shrink-0">
+          <h2 className="text-lg font-semibold text-foreground">{pageTitle}</h2>
           <div className="flex items-center gap-3">
-            <span className="text-sm text-gray-500">{user.email}</span>
+            <span className="text-sm text-muted-foreground">{user.email}</span>
           </div>
         </header>
 
